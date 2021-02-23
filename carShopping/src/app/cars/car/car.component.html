@@ -1,0 +1,43 @@
+<!-- <mat-card>
+    <mat-card-header>
+        <mat-card-title>{{car.model}} </mat-card-title>
+        <mat-card-subtitle> {{car.price}} $</mat-card-subtitle>
+    </mat-card-header>
+    <div class="crop-image">
+        <img [src]='car.image' alt="car.model">
+    </div>
+    
+    <mat-card-actions>
+        <a mat-raised-button (click)='selectedCar()' [routerLink]="['/cars', car.id]"    >See detail</a>
+        
+        
+       
+    </mat-card-actions>
+</mat-card> -->
+
+<!-- 
+<h3 appHighlight>{{ product.title | uppercase }}</h3>
+<strong>{{ product.price | currency }}</strong>
+<p>{{ product.description | slice:0:10 }}</p>
+<p>{{ today | date:'HH:mm' }}</p> -->
+
+
+    <div class="card rounded">
+        <div class="card-image">
+            <!-- <span class="card-notify-badge">Low KMS</span> -->
+            <!-- <span class="card-notify-year">2018</span> -->
+            <img class="img-fluid" src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC011A021001.jpg&width=440&height=262" alt="Alternate Text" />
+        </div>
+        <div class="card-image-overlay m-auto">
+            <span class="card-detail-badge">{{car.model}}</span>
+            <span class="card-detail-badge">{{car.price}}</span>
+            <span class="card-detail-badge">13000 Kms</span>
+        </div>
+        <div class="card-body text-center">
+            <div class="ad-title m-auto">
+                <h5>Honda Accord LX</h5>
+            </div>
+            <button  mat-mat-raised-button type="submit" [routerLink]="['cars', car.id]" >Veiw</button>
+
+        </div>
+    </div>

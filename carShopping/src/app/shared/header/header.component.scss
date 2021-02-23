@@ -1,0 +1,35 @@
+nav{
+position: relative;
+  width: 70%;
+  border-bottom:2px solid ;
+  border-color: white;
+  padding-left: 0%;
+  padding-bottom: -5%;
+  padding-top: 3%;
+  margin-left: 15%;
+  z-index: 800;
+}
+nav > a {
+  font-size: large;
+  letter-spacing: 2px;
+    padding: 50px;
+    text-decoration: none;
+    color: white;
+    z-index: 800;
+  }
+
+  nav > a:hover {
+    text-decoration: none;
+color: white;
+border-bottom-width: 5px;
+border-bottom-style: solid;
+border-bottom-color: rgb(56, 56, 185);
+
+  }
+
+  .header-row{
+    width: 100%;
+  }
+  // .header-toolbar {
+  //   margin-bottom: 20px;
+  // }

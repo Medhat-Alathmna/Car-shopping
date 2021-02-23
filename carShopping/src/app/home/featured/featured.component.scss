@@ -1,0 +1,79 @@
+img{
+    width: 100%;
+
+    
+}
+
+.carousel {
+    position: absolute;
+top: 0%;
+    height: 167%;
+    width: 100%;
+    overflow:hidden;
+}
+.carousel .carousel-inner {
+
+    height:60%;    
+}
+.col-6{
+    padding-top: 3px;
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+
+  }
+  .col-6 > .card{
+    height: 350px;
+    border:none;
+  }
+  .col-6 > .card  img{
+    height: 350px;
+  }
+  .left{
+    position: absolute;
+top: 65%;
+left: 5%;
+
+  }
+  .right{
+    position: absolute;
+top: 65%;
+left: 4%;
+
+  }
+.left > button{
+  border-color: white ;
+  color: white;
+  font-weight: 300;
+  font-size: large;
+  letter-spacing: 1px;
+  height: 50px !important;
+  width: 180%;
+}
+.left > h1 {
+  color:white;
+ font-size: xx-large;
+ 
+}
+.right > button{
+  border-color: white ;
+  color: white;
+  font-weight: 300;
+  font-size: large;
+  letter-spacing: 1px;
+  height: 50px !important;
+  width: 180%;
+}
+.left > button:hover{
+  border-color:#000000  ;
+color:  black;
+}
+.right > button:hover{
+  border-color:#000000  ;
+color:  black;
+}
+.right > h1{
+  color:white;
+ font-size: xx-large;
+ 
+
+}
