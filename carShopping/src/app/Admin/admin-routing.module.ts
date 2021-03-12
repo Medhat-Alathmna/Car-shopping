@@ -16,7 +16,7 @@ const routes: Routes =[
       },
       {
         path: '',
-        component: CarListComponent
+        component: CarFormComponent
       },
      { path:'carlist',
        component:CarListComponent

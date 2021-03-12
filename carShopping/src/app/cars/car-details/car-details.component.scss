@@ -1,29 +1,70 @@
-// .fill {
-//     overflow: hidden;
-//     background-size: cover;
-//     background-position: center;
+.fill {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
     
-// }
-.feature{
-position: relative;
+    
 }
+
 .featureimg{
     position: absolute;
     width: 100%;
-top: -80%;
-height: 1000px!important;
-
+top: 0%;
+height:750px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-bottom:1px solid white ;
 }
 
-.parallax {
-    /* The image used */
-    background-image: url('https://www.stuffmirror.com/wp-content/uploads/2017/11/2017-BMW-7-Series-Black-Ice-wallpaper-hd-1920x1080.jpg');
+// .parallax {
+//     /* The image used */
+//     background-image: url('https://www.stuffmirror.com/wp-content/uploads/2017/11/2017-BMW-7-Series-Black-Ice-wallpaper-hd-1920x1080.jpg');
   
-    /* Full height */
-    height: 100%; 
+//     /* Full height */
+//     height: 100%; 
   
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//   }
+.abs{
+    padding-top: 700px;
+    background-color: white;
+padding-left: 10% ;
+padding-right: 10% ;
+
+    
+}
+.text{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: left;
+    border-bottom:1px solid  black ;
+}
+.text1{
+    font-size: 1.2rem;
+    border-bottom:1px solid  black ;
+    padding-bottom:1%;
+}
+ol li{
+    font-size: 1.2rem;
+    line-height: 1.7;
+padding-left: 2%;
+}
+.feature{
+    overflow:hidden;
+  
+    height: 400px;
+    
+}
+.feature img{
+    
+  width: 100%;
+   height: 100%
+}
+.high-text{
+    text-align: center;
+}

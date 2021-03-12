@@ -14,11 +14,15 @@ export class CarFormComponent implements OnInit {
 
   car!:Car
   form!: FormGroup;
-
- 
+  feature=[]
+  value = 'Clear me';
   model=new FormControl('', [Validators.required])
+  uploadCard=new FormControl('', [Validators.required])
+  uploadMain=new FormControl('', [Validators.required])
+  uploadfeture=new FormControl('', [Validators.required])
+  uploadhigh=new FormControl('', [Validators.required])
   price=new FormControl('', [Validators.required])
-  description=new FormControl('', [Validators.required])
+  abstarct=new FormControl('', [Validators.required])
   Used=new FormControl('', )
   
   constructor(private carSer:CarService,private route:Router) { }
@@ -28,8 +32,12 @@ export class CarFormComponent implements OnInit {
      
       model: this.model,
       price: this.price,
-      description: this.description,
+      abstarct: this.abstarct,
       Used: this.Used,
+      uploadCard:this.uploadCard,
+      uploadMain:this.uploadMain,
+      uploadhigh:this.uploadhigh,
+      uploadfeture:this.uploadfeture
     })
     
   }
@@ -40,13 +48,16 @@ export class CarFormComponent implements OnInit {
     let data:Car={
       model:savePro.model,
       price:savePro.price,
-      description:savePro.description,
-      used:savePro.Used
+      details:savePro.abstarct,
+      onSale:savePro.Used
     }
     this.carSer.addCars(data).then(()=>{console.log(data);
       this.route.navigate(['./admin/carlist'])
     }
     )
     
+  }
+  csvInputChange(fileInputEvent: any) {
+    console.log(fileInputEvent.target.files[0]);
   }
 }

@@ -1,12 +1,15 @@
+import { Details } from "./details.model";
 import { Images } from "./images.model";
 
-export interface Car {
+export class Car {
     id?: string;
     model?: string;
     price?: number;
-    description?: string;
-    image?: any;
+    details?: Details;
+    image?: Images;
     onSale?:boolean;
-    used?:boolean;
-
+    
+    
+    
   }
+  

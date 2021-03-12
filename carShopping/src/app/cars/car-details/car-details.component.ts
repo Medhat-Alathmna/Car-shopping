@@ -11,18 +11,29 @@ import { CarService } from 'src/app/core/services/car.service';
 export class CarDetailsComponent implements OnInit {
 
   id!:string
-  car:any
+  car !:Car
+  details:any
   private sub: any;
   
   constructor( private carSer:CarService ,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   const route = this.route.snapshot.params.id 
+ this.carSer.getCar(route).snapshotChanges().subscribe(selected=>{
+   let car = selected.payload.data() as Car
+   this.car =   car
+// let inedx = 0
+// console.log( this.car.details?.features![2]);
 
- this.car =this.carSer.getCar(route).snapshotChanges().subscribe(selected=>{
-   this.car =   selected.payload.data()
+//    this.car.details?.features?.forEach(item=>{
+//     inedx= inedx +1 
+// if(inedx == 3)   {
+//   console.log(item);
+  
+// }
+//   })
 
- })
+  })
  
   
 
@@ -36,10 +47,8 @@ export class CarDetailsComponent implements OnInit {
   //   })
 
 
-  // }
+  // 
 
-  ngOnDestroy() {
-    this.sub.unsubscribe();
-  }
+ 
  
 }

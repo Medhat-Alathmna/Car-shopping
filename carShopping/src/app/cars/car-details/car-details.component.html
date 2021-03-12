@@ -1,15 +1,56 @@
-<!-- <div >
     <div class="fill">
-        <img  [src]="car.image.feature" alt="">
+        <div class="featureimg" [style.background-image]="'url(' + (car.image?.groundImg) + ')'"  >
+            
+            </div>
+          
     </div>
-    <div>
-        <ul>
-            <li>Nombre: {{ car.model }}</li>
-            <li>Precio: {{ car.price | currency }}</li>
-        </ul>
-        <p>{{ car.description }}</p>
+    
+    <div class="abs text-center" >
+        <div style="margin-top:1%;">
+           
+        <h1 class='text'>
+             {{car.details?.abstract}} 
+        </h1>
+<div   class='text1'>
+    <span style="font-weight: bold;">CO2 emissions</span> 259–238 g/km (combined) <span style="padding-left: 2%; font-weight: bold;">Fuel consumption</span> 11.3–10.4 l/100 km (combined)
+</div>
     </div>
+        
+    <div style="margin-top:5%;" class="row">
+<div class="col-6 feature" >
+    <img [src]="car.image?.featureImg" >
+</div>
+<div class="col-6">
+    
+    <h1 style="width: 60%; font-weight: 500;  ">A good reasons for the BMW 5 Series Sedan M Automobiles
+    </h1>
+    
+    <ol style="text-align: left;" >
+        <li  *ngFor="let data of car.details?.features ;let i = index"  >
+         {{data}}</li>
+       
+    </ol>
+
+
+
+</div>
+
+<div  style="margin-top:5%;" class="row">
+    <div class="col-6 text">
+        {{car.details?.highlight}}
+</div>
+    <div class="col-6 feature">
+        <img  [src]="  car.image?.highlightImg" style="border-style: solid;" >
+
+    </div>
+    
+
+    </div>
+    </div>
+
+    <!-- <div style="margin-top: 50%">
+        <h1 style="color: white;">Nombre: {{ car.model }}</h1> 
+            <h2 style="color: white;">Price: {{ car.price | currency }}</h2>
+    </div>  -->
    
-</div> -->
-<div   class="parallax"></div>
 

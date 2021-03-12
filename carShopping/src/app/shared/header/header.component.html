@@ -1,9 +1,11 @@
 <mat-toolbar class="header-toolbar" style="background-color: transparent; ">
     <mat-toolbar-row>
+      <img  style="z-index: 1000; margin-top: 5%;" width="150px" height="100px" src="https://1000logos.net/wp-content/uploads/2018/04/Mercedes-Benz-Logo.png">
 
         
                 <nav >
-                    <a  mat-button >Home</a>
+
+                    <a  mat-button [routerLink]="['/home']"  >Home</a>
                     <a mat-button >Products</a
           >
           <a mat-button 
@@ -13,6 +15,7 @@
             <mat-icon style="font-size: xx-large;">search</mat-icon>
            
           </a>
+
         </nav>
            
 

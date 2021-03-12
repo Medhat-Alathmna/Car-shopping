@@ -7,6 +7,7 @@ import { CarsComponent } from './cars/cars.component';
 import { CarDetailsComponent } from './car-details/car-details.component';
 import { CarRoutingModule } from './car-routing.module';
 import { RouterModule, Routes } from '@angular/router';
+import { FilterComponent } from './filter/filter.component';
 
 
 
@@ -15,12 +16,13 @@ import { RouterModule, Routes } from '@angular/router';
   declarations: [
     CarComponent,
     CarsComponent,
-    CarDetailsComponent
+    CarDetailsComponent,
+    FilterComponent
   ],
   imports: [
     CarRoutingModule,
     CommonModule,
-    MaterialModule,
+    MaterialModule
     
   ],
   exports:[

@@ -11,11 +11,12 @@ import { CarService } from 'src/app/core/services/car.service';
 export class CarComponent implements OnInit {
 
   @Input() car!: Car;
-
+  
   constructor( private carSer:CarService, private router : Router) { }
 
   ngOnInit(): void {
-    this.car.price
+    
+
   }
 
   addCart(){
@@ -25,6 +26,7 @@ export class CarComponent implements OnInit {
   selectedCar(){
     this.carSer.selectedCar.next(this.car)
     // this.router.navigateByUrl(`/cars/${this.car.id}`)
+    
   }
 
 }

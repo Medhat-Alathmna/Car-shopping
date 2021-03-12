@@ -1,5 +1,7 @@
 export interface Images{
-feature?:string,
-albums?:[]
+featureImg?:string,
+highlightImg?:string,
+groundImg?:string,
+cardImg?:any
 
 }

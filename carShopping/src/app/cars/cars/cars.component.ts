@@ -14,7 +14,7 @@ export class CarsComponent implements OnInit {
 
   ngOnInit(): void {
   this.getCar()
-    console.log("WWE");
+console.log(this.Carss);
     
   
   

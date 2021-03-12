@@ -1,7 +1,14 @@
-<div class="container mt-3  lol">
-<div class="row">
-    <app-car class="col-4" [car]="car" *ngFor="let car of Carss">
-      
-    </app-car>
+<div style="background-color: white;" class="lol">
+
+<div style="    border-top: 3px solid black;
+" class="container-fluid pt-3 ">
+<div class="row row-cars">
+
+
+        <app-filter></app-filter>
+
+
+    <app-car class="col-12 cars" [car]="car" *ngFor="let car of Carss">    </app-car>
+</div>
 </div>
 </div>
