@@ -1,23 +1,23 @@
 <mat-toolbar class="header-toolbar" style="background-color: transparent; ">
-    <mat-toolbar-row>
-      <img  style="z-index: 1000; margin-top: 5%;" width="150px" height="100px" src="https://1000logos.net/wp-content/uploads/2018/04/Mercedes-Benz-Logo.png">
+  <mat-toolbar-row>
+    <img style="z-index: 1000; margin-top: 5%;" width="150px" height="100px"
+      src="https://1000logos.net/wp-content/uploads/2018/04/Mercedes-Benz-Logo.png">
+
+
+    <nav>
+
+      <a mat-button [routerLink]="['/home']">Home</a>
+      <a mat-button>Products</a>
+      <a mat-button>Contact</a>
+      <a style="margin-left: 38% ; background-color: transparent;" mat-raised-button matBadgeColor="warn">
+        <!-- <mat-icon style="font-size: xx-large;">search</mat-icon> -->
+          <app-search></app-search>
 
         
-                <nav >
+      </a>
 
-                    <a  mat-button [routerLink]="['/home']"  >Home</a>
-                    <a mat-button >Products</a
-          >
-          <a mat-button 
-            >Contact</a
-          >
-          <a style="margin-left: 38% ; background-color: transparent;" mat-raised-button  matBadgeColor="warn">
-            <mat-icon style="font-size: xx-large;">search</mat-icon>
-           
-          </a>
+    </nav>
 
-        </nav>
-           
 
-    </mat-toolbar-row>
+  </mat-toolbar-row>
 </mat-toolbar>

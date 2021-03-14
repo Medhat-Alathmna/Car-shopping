@@ -1,4 +1,5 @@
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -24,5 +25,12 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
     this.c.cuurentRouter.next(this.route.url)
   }
+routetoHOME(){
+  this.route.navigateByUrl('/home')
+  setTimeout(() => {
+    location.reload();
 
+  }, 200);
+
+}
 }

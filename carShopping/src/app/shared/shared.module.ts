@@ -4,18 +4,21 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MaterialModule } from '../material/material/material.module';
 import { RouterModule } from '@angular/router';
+import { SearchComponent } from './search/search.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-  FooterComponent
+  FooterComponent,
+  SearchComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
-   
+    RouterModule,FormsModule,
+    ReactiveFormsModule
     
   ],
   exports:[

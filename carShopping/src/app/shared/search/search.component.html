@@ -1,0 +1,18 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Car Model</mat-label>
+    <input type="text"
+           placeholder="Pick one"
+           aria-label="Number"
+           matInput
+           [formControl]="myControl"
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        <div *ngFor="let car of Cars">
+<div  (click)="routeCar(car.id)" >{{car.model}}</div>
+        </div>
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

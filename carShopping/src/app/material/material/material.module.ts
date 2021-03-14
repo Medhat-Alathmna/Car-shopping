@@ -19,6 +19,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 
 const material =[
@@ -42,7 +43,7 @@ const material =[
     MatPaginatorModule,
     MatFormFieldModule,
     MatCheckboxModule,
-    
+    MatAutocompleteModule
   
 ]
 
